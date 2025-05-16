@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="index.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+  </head>
+  <body class="wallpoet-regular">
+       <div class="header">
+    <button onclick="resetGame()" class="wallpoet-regular">Again!</button>
+    <p>Between 1 to 20</p>
+  </div>
+
+  <main>
+    <h1>GUESS MY NUMBER!</h1>
+
+    <div class="Mid-head">
+      <div class="sp1"></div>
+      <div class="sp2" id="secret">?</div>
+    </div>
+
+    <section class="bottom">
+      <div class="bottom-left">
+        <input type="number" id="guess" class="NumBox" min="1" max="20" required />
+        <button onclick="checkGuess()" class="wallpoet-regular">Check!</button>
+      </div>
+      <div class="score-section">
+        <p id="message">Number</p>
+        <p>Score: <span id="score">20</span></p>
+        <p>Highscore: <span id="highscore">0</span></p>
+      </div>
+    </section>
+  </main>
+
+      <script src="index.js"></script>
+  </body>
+</html>
